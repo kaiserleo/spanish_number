@@ -59,5 +59,3 @@ class Numeric
     text += " M.N."
   end
 end
-
-puts 1234567890161.12345.to_text_spanish("mxn")
