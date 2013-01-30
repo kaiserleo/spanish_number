@@ -4,7 +4,7 @@ CENTENAS = ["", "ciento", "doscientos", "trescientos", "cuatrocientos", "quinien
 MILLONES = ["millon", "billon", "trillon", "cuatrillon"]
 
 class Numeric
-  def to_text_spanish currency
+  def to_spanish_text currency
     final_text = ""
     self.to_s =~ /([^\.]*)(\..*)?/
     int, dec = $1.reverse, $2 ? $2[1..-1] : ""

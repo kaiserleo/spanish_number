@@ -7,7 +7,7 @@ Spanish Number
 Usage
 -------------
     number = 123456.70
-    number.to_text_spanish("mxn")
+    number.to_spanish_text("mxn")
 
 ### Currencies
 
