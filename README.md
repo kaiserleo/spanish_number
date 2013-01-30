@@ -6,6 +6,7 @@ Spanish Number
 
 Usage
 -------------
+    require 'spanish_number'
     number = 123456.70
     number.to_spanish_text("mxn")
 ### result
