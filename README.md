@@ -8,8 +8,11 @@ Usage
 -------------
     number = 123456.70
     number.to_spanish_text("mxn")
+### result
+    ciento veintitres mil cuatrocientos cincuenta y seis pesos 70/100 M.N.
 
-### Currencies
+Currencies
+-------------
 
 * You can modify the code to add more currencies.
 * Puedes modificar el proyecto para añadir otras monedas
