@@ -1,12 +1,15 @@
+#!/bin/env ruby
+# encoding: utf-8
+
 UNIDADES = ["", "un", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce", "trece", "catorce", "quince", "dieciseis", "diecisiete", "dieciocho", "diecinueve", "veinte", "veintiun", "veintidos", "veintitres", "veinticuatro", "veinticinco", "veintiseis", "veintisiete", "veintiocho", "veintinueve"]
 DECENAS = ["", "diez", "veinte", "treinta", "cuarenta", "cincuenta", "sesenta", "setenta", "ochenta", "noventa"]
 CENTENAS = ["", "ciento", "doscientos", "trescientos", "cuatrocientos", "quinientos", "seiscientos", "setecientos", "ochocientos", "novecientos"]
-MILLONES = ["millon", "billon", "trillon", "cuatrillon"]
+MILLONES = ["mill", "bill", "trill", "cuatrill"]
 
 class Numeric
   def to_spanish_text currency=""
     final_text = ""
-    self.to_s =~ /([^\.]*)(\..*)?/
+    sprintf( "%.2f", self ) =~ /([^\.]*)(\..*)?/
     int, dec = $1.reverse, $2 ? $2[1..-1] : ""
     int = int.scan(/.{1,6}/).reverse
     int = int.map{ |million| million.scan(/.{1,3}/).reverse}
@@ -15,12 +18,15 @@ class Numeric
       final_text += solve_million sixdigit
       if (i-2) >= 0
         final_text += " " + MILLONES[ i-2 ]
-        final_text += "es" if sixdigit != ["1"]
+        final_text += sixdigit == ["1"] ? "ón" : "ones"
       end
     end
+    final_text = " cero" if final_text.empty?
     final_text += mxn dec if currency == 'mxn'
-    final_text
+    final_text[1..-1]
   end
+
+  private
 
   def solve_million sixdigit
     text = ""
