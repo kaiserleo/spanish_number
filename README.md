@@ -1,4 +1,6 @@
+[![Build Status](https://travis-ci.org/rderoldan1/spanish_number.svg?branch=master)](https://travis-ci.org/rderoldan1/spanish_number)
 [![Coverage Status](https://coveralls.io/repos/rderoldan1/spanish_number/badge.png)](https://coveralls.io/r/rderoldan1/spanish_number)
+
 
 Spanish Number
 =============
