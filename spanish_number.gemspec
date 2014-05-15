@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.date        = '2013-07-08'
   s.summary     = "Express a number in spanish text"
   s.description = "Express a number in spanish text"
-  s.authors     = ["Leonardo de la Cerda"]
-  s.email       = 'leo@kueski.com'
+  s.authors     = ["Leonardo de la Cerda", 'Ruben Espinosa']
+  s.email       = ['leo@kueski.com', 'rderoldan1@gmail.com']
   s.files       = ["lib/spanish_number.rb"]
   s.homepage    =
     'http://rubygems.org/gems/spanish_number'
