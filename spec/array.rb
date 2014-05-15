@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 TEST = [
  [799304208,"setecientos noventa y nueve millones trescientos cuatro mil doscientos ocho"],
  [949531602,"novecientos cuarenta y nueve millones quinientos treinta y un mil seiscientos dos"],
@@ -99,5 +101,7 @@ TEST = [
  [635598822,"seiscientos treinta y cinco millones quinientos noventa y ocho mil ochocientos veintidos"],
  [14719371,"catorce millones setecientos diecinueve mil trescientos setenta y un"],
  [129541125,"ciento veintinueve millones quinientos cuarenta y un mil ciento veinticinco"],
- [1000000, 'un millón']
+ [1000000, 'un millón'],
+ [0, 'cero'],
+ [10, 'diez']
 ]
