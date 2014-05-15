@@ -1,3 +1,8 @@
+[![Gem Version](https://badge.fury.io/rb/spanish_number.svg)](http://badge.fury.io/rb/spanish_number)
+[![Build Status](https://travis-ci.org/rderoldan1/spanish_number.svg?branch=master)](https://travis-ci.org/rderoldan1/spanish_number)
+[![Coverage Status](https://coveralls.io/repos/rderoldan1/spanish_number/badge.png)](https://coveralls.io/r/rderoldan1/spanish_number)
+
+
 Spanish Number
 =============
 

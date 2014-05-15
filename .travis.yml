@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.1.0
+before_script:
+  - export LANG=en_US.UTF-8
+before_install:
+    - gem install bundler
+    - gem --version
