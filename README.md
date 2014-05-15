@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/rderoldan1/spanish_number/badge.png)](https://coveralls.io/r/rderoldan1/spanish_number)
+
 Spanish Number
 =============
 
