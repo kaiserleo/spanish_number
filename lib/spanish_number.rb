@@ -32,7 +32,9 @@ class Numeric
     text = ""
     text += solve_thousand sixdigit.first
     if sixdigit.length > 1
-      text += " mil"
+			if sixdigit[0].to_i != 0
+        text += " mil"
+      end
       text += solve_thousand sixdigit.last
     end
     text
