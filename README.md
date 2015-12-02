@@ -14,8 +14,10 @@ Usage
     require 'spanish_number'
     number = 123456.70
     number.to_spanish_text("mxn")
+    number.to_spanish_text_percent
 ### result
     ciento veintitres mil cuatrocientos cincuenta y seis pesos 70/100 M.N.
+    ciento veintitres mil cuatrocientos cincuenta y seis punto setenta por ciento
 
 Currencies
 -------------

@@ -26,6 +26,11 @@ class Numeric
     final_text[1..-1]
   end
 
+  def to_spanish_text_percent
+    split_number = format('%.2f', self).split('.')
+    split_number[0].to_f.to_spanish_text + ' punto ' + split_number[1].to_f.to_spanish_text + ' por ciento'
+  end
+
   private
 
   def solve_million sixdigit
