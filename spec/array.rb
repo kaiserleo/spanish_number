@@ -105,3 +105,13 @@ TEST = [
  [0, 'cero'],
  [10, 'diez']
 ]
+
+TESTPERCENT = [
+    [3546.57,"tres mil quinientos cuarenta y seis punto cincuenta y siete por ciento"],
+    [97354.00,"noventa y siete mil trescientos cincuenta y cuatro punto cero por ciento"],
+    [10,"diez punto cero por ciento"],
+    [1000000,"un millón punto cero por ciento"],
+    [734.934,"setecientos treinta y cuatro punto noventa y tres por ciento"],
+    [1.453453,"un punto cuarenta y cinco por ciento"],
+    [10,"diez punto cero por ciento"]
+]

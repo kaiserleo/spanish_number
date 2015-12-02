@@ -16,6 +16,9 @@ Usage
     number.to_spanish_text("mxn")
 ### result
     ciento veintitres mil cuatrocientos cincuenta y seis pesos 70/100 M.N.
+    number.to_spanish_text_percent
+### reult
+    ciento veintitres mil cuatrocientos cincuenta y seis punto setenta por ciento
 
 Currencies
 -------------
